@@ -1,0 +1,32 @@
+{
+  "name": "cc_api_integration",
+  "version": "1.0.0",
+  "description": "Crypto currency Price API Integration",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build-babel": "npm run build-babel-server && npm run build-babel-client",
+    "build-babel-server": "babel src/server --out-dir ./dist",
+    "build-babel-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "start": "node ./dist/server.js",
+    "test": "jest ./src",
+    "clean": "rimraf dist node_modules"
+  },
+  "author": "Santhosh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "html-webpack-plugin": "^3.0.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "webpack": "^3.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
