@@ -10,6 +10,30 @@ const moduleObj = {
             exclude: /node_modules/,            
             loaders: ["babel-loader"],        
         },
+        {
+            test: /\.css$/,
+            use: [
+                'style-loader',
+                'css-loader',
+            ],
+        },
+        {
+            test: /\.less$/,
+            use: [
+                {
+                    loader: 'style-loader',
+                },
+                {
+                    loader: 'css-loader',
+                },
+                {
+                    loader: 'less-loader',
+                    options: {
+                        javascriptEnabled: true,
+                    },
+                },
+            ],
+        },
     ],
 };
 

@@ -1,0 +1,128 @@
+#components-layout-demo-top-side .logo {
+    float: left;
+    width: 120px;
+    height: 31px;
+    margin: 16px 24px 16px 0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side .logo {
+    float: right;
+    margin: 16px 0 16px 24px;
+}
+
+.site-layout-background {
+    background: #fff;
+}
+
+.progress {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
+
+.ant-layout-header {
+    padding: 0px !important;
+}
+
+.layout-content {
+    margin-top: 64px; /* header higth; */
+}
+
+.background {
+    background-color: white;
+}
+
+.success-background {
+    background-color: #e6f7ff;
+}
+
+.failure-background {
+    background-color: #fffbe6;
+}
+
+.ant-modal-confirm-body > .anticon + .ant-modal-confirm-title + .ant-modal-confirm-content{
+    margin-left: 0px;
+}
+
+.scroll {
+    width: 735px;
+    height: 350px;
+    overflow: auto;
+}
+
+.ant-modal-confirm-info {
+    width: 800px !important;
+}
+
+.ant-card-grid {
+    padding: 10px;
+}
+
+.review-btn:hover {
+    color: #ffffff;
+    background-color: #ffd209;
+    border-color: #ffdb49;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.review-btn, .review-btn:focus {
+    color: #ffffff;
+    background-color: #ffc600;
+    border-color: #ffc600;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.submit-btn:hover {
+    color: #ffffff;
+    background-color: #00c441;
+    border-color: #00c441;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.submit-btn, .submit-btn:focus {
+    color: #ffffff;
+    background-color: #00b33c;
+    border-color: #00b33c;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.ant-card-body {
+    padding: 10px;
+}
+
+.expanded {
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px;
+}
+
+.option {
+    margin: 15px;
+}
+
+.question-options {
+    display: block;
+    margin: 5px !important;
+    padding: 5px;
+}
+
+.previous-btn {
+    margin-right: 5px;
+}
+
+.next-btn {
+    margin-left: 5px;
+}
+
+.countdown {
+    margin: 5px;
+}

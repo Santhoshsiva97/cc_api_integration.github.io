@@ -1,12 +1,16 @@
-import React from 'react'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Container from './components/Container';
+import UserProvider from './components/UserProvider';
 
-export default class App extends React.Component {    
-    render() {        
-        return (
-            <div>
-                <h1>Hey dude, Welcome Crypto price Integration project!</h1>
-                <div>Site under construction...</div>
-            </div>
-        );   
+
+export default class App extends React.Component {
+    render() {
+        <UserProvider>
+            <Router basename="/client/home">
+                <Container />
+            </Router>
+        </UserProvider>
     }
 }

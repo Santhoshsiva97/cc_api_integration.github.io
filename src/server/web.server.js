@@ -2,10 +2,11 @@ const express = require('express')
 const PORT = 8000;
 
 export default class WebServer { 
-    constructor () {    
-        this.app = express()    
-        this.app.use(express.static('dist/public')
-    )}
+    constructor () {
+        this.app = express();
+        this.app.use(express.static('dist/public'));
+    }
+    
 
     start () { 
         return new Promise((resolve, reject) => {   
@@ -18,7 +19,8 @@ export default class WebServer {
                 reject(e)      
             }   
         })  
-    }
+    };
+
     stop () {    
         return new Promise((resolve, reject) => {      
             try {        
@@ -31,4 +33,4 @@ export default class WebServer {
             }   
         })  
     }
-}
+};
