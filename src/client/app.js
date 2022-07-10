@@ -4,7 +4,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Container from './components/Container';
 import UserProvider from './components/UserProvider';
 
-
 export default class App extends React.Component {
     render() {
         <UserProvider>
